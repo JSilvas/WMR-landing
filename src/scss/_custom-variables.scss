@@ -25,3 +25,12 @@ h1, h2, h3, h4, h5, h6,
   font-weight: 500;
   line-height: 1.2;
 }
+
+/* fullscreen background image */
+body { 
+  background: url('../images/background.png') no-repeat 23% center scroll; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}

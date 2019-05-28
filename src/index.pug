@@ -1,11 +1,19 @@
 doctype html
 head
+  // Global site tag (gtag.js) - Google Analytics
+  script(async='' src='https://www.googletagmanager.com/gtag/js?id=UA-134004178-2')
+  script.
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-134004178-2');
   title We Make Reality
   meta(charset='utf-8')
   meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
-  meta(name='description' content='')
+  meta(name='description' content='A gathering place for creators, artists, researchers, and explorers working together to discover the potential of emerging technologies like virtual, augmented, and mixed reality (XR).')
   meta(name='author' content='')
   link(rel='stylesheet' href='css/bootstrap/bootstrap.min.css')
+  link(rel='stylesheet' href='css/custom.css')
   link(rel='icon' href='favicon.ico')
 .container-fluid
   // Nav Section  Start
@@ -15,7 +23,7 @@ head
   // Nav Section End test
   section.py-5
     .container.text-center
-      img(src='images/community.png' height='320' alt='small lightbulbs branching off of larger ones in a network of new ideas')
+      img(src='images/community.png' height='320' style='width: inherit; max-width: 320px;' alt='small lightbulbs branching off of larger ones in a network of new ideas')
       h1.my-5 We Make Reality. Together.
       p
         | We&apos;re gathering creators, artists, researchers, and explorers to discover the potential of emerging technologies like virtual, augmented, and mixed reality (XR).  We&apos;d like your help to build a home for this community. One where anyone, whether just starting or already out in the wild, can showcase their work and share insights or reflection along the way.
@@ -26,7 +34,7 @@ head
           h5 Help us build this home &#xF3E0;&#xF388;
           p.mb-3.mb-md-0 Submit your email to receive updates and learn how to get involved.
         .col-md-6
-          .input-group.justify-content-center
+          .card.input-group.justify-content-center
             // Begin Mailchimp Signup Form
             link(href='//cdn-images.mailchimp.com/embedcode/classic-10_7.css' rel='stylesheet' type='text/css')
             style(type='text/css').
@@ -57,7 +65,7 @@ head
   section.py-5
     .container.text-center
       .container.text-center
-        img(src='images/bricks.png' height='320' alt='Hands building bricks upward')
+        img(src='images/bricks.png' height='320' alt='Hands building bricks upward' style='width: inherit; max-width: 320px;')
         h2.mb-5 Be part of our early community &#xF49C;
         .card-deck
           .card
@@ -75,12 +83,12 @@ head
                 | Working on a research study?  Writing out your thesis? Diving deep into measuring the impact of XR? Your insights and observations can make a huge impact on the work of others. You deserve to be recognized. Fear nothing! Hit that submit button below:
             .card-footer.bg-transparent.border-0.mb-3
               a.btn.btn-primary(target='_blank' href='https://wemakereality.typeform.com/to/YnRZ6O ') Submit via Typeform
-  section.py-5
+  section.py-5.text-center
     .container
-      h2.text-center Don&apos;t have a project or research? 
-      h2.text-center  No problem, friend!
+      h2 Don&apos;t have a project or research? 
+      h2  No problem, friend!
       .d-flex.justify-content-center.my-4
-        img.mx-1(height='320' src='images/Surrealist-Lightbulb.gif' alt='')
+        img.mx-1(height='320' style='width: inherit;' src='images/Surrealist-Lightbulb.gif' alt='')
       p
         | If you&apos;re in the idea phase, or just wanting to lurk and learn, you&apos;re still part of this community. Sign up to our newsletter for the ocassional juicy update on our progress.
       .container.text-center
@@ -88,7 +96,7 @@ head
   // Footer Start
   footer.py-3
     .container
-      .d-flex.justify-content-center.align-items-center.flex-column
+      .d-flex.justify-content-center.align-items-center.flex-column.text-center
         h5.mb-3
           a(href='index.html') We Make Reality
         p.mb-1.small.text-muted
@@ -98,7 +106,7 @@ head
           a(href='https://absurd.design/' target='blank') Absurd Illustrations
           | .
         .d-flex
-          p.mb-0.small.text-muted &copy; 2019 We Make Reality. All right reserved.
+          p.mb-0.small.text-muted &copy; 2019 We Make Reality. All rights reserved.
   // Footer End
 script(src='js/jquery/jquery.min.js')
 script(src='js/popper/popper.min.js')
