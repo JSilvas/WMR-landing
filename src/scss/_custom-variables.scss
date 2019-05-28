@@ -1,0 +1,36 @@
+$cyan: #17a2b8;
+$info: $cyan;
+$yellow: #ffc107;
+$white: #fff;
+$body-bg: $white;
+$enable-gradients: true;
+$enable-shadows: true;
+$link-hover-decoration: none;
+$modal-xl: 1140px;
+$spacer: 1rem;
+$border-width: 1px;
+$indigo: #6610f2;
+$modal-content-bg: $indigo;
+
+
+/* Medium Text Sizes */
+html {
+  font-size: 1.25em;
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+/* fullscreen background image */
+body { 
+  background: url('../images/background.png') no-repeat 23% center scroll; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
